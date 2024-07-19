@@ -1,0 +1,22 @@
+npm init -y를 cmd에 쳐서 package.json 파일을 만들어줌
+npm i -D parcel 개발 환경에서 사용하는 parcel 번들러를 프로젝트에 설치하기 위한 명령어
+  npm : node package manager
+  i : install
+  -D : --save-dev : 개발 의존성에 패키지를 추가하라는 것
+  parcel : 패키지. 웹 어플리케이션을 위한 빠르고 쉬운 번들러
+
+package.json에 script에서 test를 지우고 
+"dev": "parcel ./index.html",
+"build": "parcel build ./index.html"
+입력
+
+개발 서버를 오픈해서 test 할때는 "dev"
+실제로 제품화해서 서버로 배포할떄는 "build"
+
+index 페이지를 생성 후
+<script type="module" defer src="./main.js"></script>
+
+type="module" : 모듈로써 동작하도록 함
+defer : main.js가 html 구조를 다 해석한 다음에 동작하도록 함
+
+npm run dev로 웹 서버 실행
