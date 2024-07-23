@@ -1,0 +1,8 @@
+npm init -y
+npm i -D parcel typescript
+입력 후
+package.json 수정
+tsconfig.json 파일 생성 후 입력
+index.html 파일 생성 후 값 추가
+src 폴더 생성
+ts 파일 생성
